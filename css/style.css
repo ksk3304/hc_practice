@@ -109,6 +109,7 @@ main {
 @media (min-width: 600px) {
     body {
         max-width: 960px;   
+        margin: 0 auto;
     }
         
     main .introduce-item__contents {
