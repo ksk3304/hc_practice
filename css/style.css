@@ -110,7 +110,8 @@ main {
     main {
         max-width: 960px;
         padding: 0 38.4px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     main .introduce-item__contents {
