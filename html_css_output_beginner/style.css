@@ -19,7 +19,8 @@ main {
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 30px 0;
+    height: 115px;
+    align-items: center;
 }
 
 header .header__title {
@@ -31,12 +32,8 @@ header .header__title {
 
 header .header__menu {
     display: flex;
+    gap: 15px;
     list-style: none;
-}
-
-header .header__menu-item {
-    margin-left: 15px;
-    padding-top: 15px;
 }
 
 .top__figure {
