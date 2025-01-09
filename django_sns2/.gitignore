@@ -1,0 +1,53 @@
+# Python関連
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django関連
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+static/
+
+# 仮想環境
+venv/
+env/
+.env
+.venv
+
+# IDE関連
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS関連
+.DS_Store
+Thumbs.db
+
+# 開発環境の設定
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# デプロイ関連
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/

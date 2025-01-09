@@ -1,0 +1,13 @@
+{% extends 'todo/base.html' %}
+
+{% block title %}ToDo 削除確認{% endblock %}
+
+{% block content %}
+    <h1>ToDo 削除確認</h1>
+    <p>"{{ object.title }}" を削除してもよろしいですか？</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">削除</button>
+    </form>
+    <a href="{% url 'todo:list' %}">キャンセル</a>
+{% endblock %}
