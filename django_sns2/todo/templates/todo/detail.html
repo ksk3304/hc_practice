@@ -1,0 +1,15 @@
+{% extends 'todo/base.html' %}
+
+{% block title %}ToDo 詳細{% endblock %}
+
+{% block content %}
+    <h1>ToDo 詳細</h1>
+    <div>
+        <h2>{{ todo.title }}</h2>
+        <p>状態: {% if todo.completed %}完了{% else %}未完了{% endif %}</p>
+        <p>作成日時: {{ todo.created_at }}</p>
+    </div>
+    <a href="{% url 'todo:update' todo.pk %}">編集</a>
+    <a href="{% url 'todo:delete' todo.pk %}">削除</a>
+    <a href="{% url 'todo:list' %}">一覧に戻る</a>
+{% endblock %}

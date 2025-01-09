@@ -1,0 +1,21 @@
+{% extends 'todo/base.html' %}
+
+{% block title %}ToDo 一覧{% endblock %}
+
+{% block content %}
+    <h1>ToDo 一覧</h1>
+    <ul>
+        {% for todo in todos %}
+            <li>
+                {{ todo.title }}
+                {% if todo.completed %}
+                    ✓
+                {% endif %}
+                <a href="{% url 'todo:detail' todo.pk %}">詳細</a>
+                <a href="{% url 'todo:update' todo.pk %}">編集</a>
+                <a href="{% url 'todo:delete' todo.pk %}">削除</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'todo:create' %}">新規作成</a>
+{% endblock %}
